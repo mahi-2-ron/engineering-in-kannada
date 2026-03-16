@@ -7,6 +7,8 @@ import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { ScrollToTop } from '../components/ScrollToTop'; // 🟢 Import ScrollToTop component
 import { ArrowLeft } from 'lucide-react';
+import { LikeButton } from '../components/LikeButton';
+
 
 export const BlogPost: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -78,8 +80,10 @@ export const BlogPost: React.FC = () => {
               {blog.content}
             </ReactMarkdown>
           </article>
+          {slug && <LikeButton slug={slug} />}
         </div>
       </div>
+
       <Footer />
     </div>
   );
