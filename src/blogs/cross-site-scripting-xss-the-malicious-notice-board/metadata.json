@@ -1,0 +1,15 @@
+{
+  "title": "Cross-Site Scripting (XSS): The Malicious Notice Board",
+  "date": "2026-03-17",
+  "author": "Mahesh R M",
+  "authorUrl": "https://www.linkedin.com/in/mahesh-r-madiwalar-9a468b345/",
+  "description": "Injecting malicious JavaScript into web pages viewed by other users.",
+  "tags": [
+    "Advanced",
+    "Karnataka",
+    "Engineering"
+  ],
+  "domain": "Cybersecurity",
+  "readTime": "5 min read",
+  "difficulty": "Advanced"
+}

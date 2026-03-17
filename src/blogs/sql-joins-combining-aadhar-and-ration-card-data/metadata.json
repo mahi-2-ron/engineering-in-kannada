@@ -1,0 +1,15 @@
+{
+  "title": "SQL Joins: Combining Aadhar and Ration Card Data",
+  "date": "2026-03-17",
+  "author": "Mahesh R M",
+  "authorUrl": "https://www.linkedin.com/in/mahesh-r-madiwalar-9a468b345/",
+  "description": "How to merge data from multiple tables using INNER, LEFT, and FULL joins.",
+  "tags": [
+    "Intermediate",
+    "Karnataka",
+    "Engineering"
+  ],
+  "domain": "Database Management Systems (DBMS)",
+  "readTime": "5 min read",
+  "difficulty": "Intermediate"
+}

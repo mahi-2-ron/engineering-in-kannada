@@ -1,0 +1,15 @@
+{
+  "title": "Database Transactions & Concurrency: Booking a Tatkal Ticket",
+  "date": "2026-03-17",
+  "author": "Mahesh R M",
+  "authorUrl": "https://www.linkedin.com/in/mahesh-r-madiwalar-9a468b345/",
+  "description": "Handling scenarios where multiple users try to modify the same data simultaneously.",
+  "tags": [
+    "Advanced",
+    "Karnataka",
+    "Engineering"
+  ],
+  "domain": "Database Management Systems (DBMS)",
+  "readTime": "5 min read",
+  "difficulty": "Advanced"
+}

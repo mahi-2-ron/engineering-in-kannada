@@ -1,0 +1,15 @@
+{
+  "title": "CPU Scheduling Explained with BMTC Bus Routes",
+  "date": "2026-03-17",
+  "author": "Mahesh R M",
+  "authorUrl": "https://www.linkedin.com/in/mahesh-r-madiwalar-9a468b345/",
+  "description": "Learn how your CPU decides which task to execute next, drawing parallels to how BMTC schedules buses at Majestic (KBS).",
+  "tags": [
+    "Beginner",
+    "Karnataka",
+    "Engineering"
+  ],
+  "domain": "Operating Systems (OS)",
+  "readTime": "5 min read",
+  "difficulty": "Beginner"
+}

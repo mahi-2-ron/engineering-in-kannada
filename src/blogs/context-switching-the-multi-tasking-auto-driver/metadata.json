@@ -1,0 +1,15 @@
+{
+  "title": "Context Switching: The Multi-Tasking Auto Driver",
+  "date": "2026-03-17",
+  "author": "Mahesh R M",
+  "authorUrl": "https://www.linkedin.com/in/mahesh-r-madiwalar-9a468b345/",
+  "description": "The overhead your CPU faces when switching tasks, compared to an auto driver trying to navigate traffic, change the meter, and talk to the passenger.",
+  "tags": [
+    "Beginner",
+    "Karnataka",
+    "Engineering"
+  ],
+  "domain": "Operating Systems (OS)",
+  "readTime": "5 min read",
+  "difficulty": "Beginner"
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Hashing vs Encryption: Making a Smoothie",
+  "date": "2026-03-17",
+  "author": "Mahesh R M",
+  "authorUrl": "https://www.linkedin.com/in/mahesh-r-madiwalar-9a468b345/",
+  "description": "Why storing passwords in plain text is a sin, and how hashing makes it a one-way street.",
+  "tags": [
+    "Beginner",
+    "Karnataka",
+    "Engineering"
+  ],
+  "domain": "Cybersecurity",
+  "readTime": "5 min read",
+  "difficulty": "Beginner"
+}

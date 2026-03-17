@@ -1,0 +1,15 @@
+{
+  "title": "System Calls: Ordering Food at a Counter",
+  "date": "2026-03-17",
+  "author": "Mahesh R M",
+  "authorUrl": "https://www.linkedin.com/in/mahesh-r-madiwalar-9a468b345/",
+  "description": "The boundary between user mode and kernel mode. Why you can't just cook the food yourself in a restaurant.",
+  "tags": [
+    "Intermediate",
+    "Karnataka",
+    "Engineering"
+  ],
+  "domain": "Operating Systems (OS)",
+  "readTime": "5 min read",
+  "difficulty": "Intermediate"
+}

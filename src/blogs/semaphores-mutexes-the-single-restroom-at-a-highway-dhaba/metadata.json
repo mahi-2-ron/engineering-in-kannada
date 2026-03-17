@@ -1,0 +1,15 @@
+{
+  "title": "Semaphores & Mutexes: The Single Restroom at a Highway Dhaba",
+  "date": "2026-03-17",
+  "author": "Mahesh R M",
+  "authorUrl": "https://www.linkedin.com/in/mahesh-r-madiwalar-9a468b345/",
+  "description": "Synchronizing access to shared resources safely, explained using the keys to the restroom at a busy Mysore-Bangalore highway Kamat Dhaba.",
+  "tags": [
+    "Advanced",
+    "Karnataka",
+    "Engineering"
+  ],
+  "domain": "Operating Systems (OS)",
+  "readTime": "5 min read",
+  "difficulty": "Advanced"
+}

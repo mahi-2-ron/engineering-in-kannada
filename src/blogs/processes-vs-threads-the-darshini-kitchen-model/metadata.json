@@ -1,0 +1,15 @@
+{
+  "title": "Processes vs. Threads: The Darshini Kitchen Model",
+  "date": "2026-03-17",
+  "author": "Mahesh R M",
+  "authorUrl": "https://www.linkedin.com/in/mahesh-r-madiwalar-9a468b345/",
+  "description": "Understand the difference between heavyweight processes and lightweight threads by looking at how a classic Bengaluru Darshini operates during morning rush hour.",
+  "tags": [
+    "Intermediate",
+    "Karnataka",
+    "Engineering"
+  ],
+  "domain": "Operating Systems (OS)",
+  "readTime": "5 min read",
+  "difficulty": "Intermediate"
+}

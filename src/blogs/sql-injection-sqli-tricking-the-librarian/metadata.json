@@ -1,0 +1,15 @@
+{
+  "title": "SQL Injection (SQLi): Tricking the Librarian",
+  "date": "2026-03-17",
+  "author": "Mahesh R M",
+  "authorUrl": "https://www.linkedin.com/in/mahesh-r-madiwalar-9a468b345/",
+  "description": "Exploiting poorly sanitized database inputs to dump or delete databases.",
+  "tags": [
+    "Intermediate",
+    "Karnataka",
+    "Engineering"
+  ],
+  "domain": "Cybersecurity",
+  "readTime": "5 min read",
+  "difficulty": "Intermediate"
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Recursion: The Droste Effect of Nandini Milk Packets",
+  "date": "2026-03-17",
+  "author": "Mahesh R M",
+  "authorUrl": "https://www.linkedin.com/in/mahesh-r-madiwalar-9a468b345/",
+  "description": "Functions calling themselves until a base case is reached.",
+  "tags": [
+    "Beginner",
+    "Karnataka",
+    "Engineering"
+  ],
+  "domain": "Data Structures & Algorithms (DSA)",
+  "readTime": "5 min read",
+  "difficulty": "Beginner"
+}

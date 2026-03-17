@@ -1,0 +1,15 @@
+{
+  "title": "Arrays vs. Linked Lists: Namma Metro vs. BMTC",
+  "date": "2026-03-17",
+  "author": "Mahesh R M",
+  "authorUrl": "https://www.linkedin.com/in/mahesh-r-madiwalar-9a468b345/",
+  "description": "The fundamental differences in how memory stores linear data and the trade-offs of fast access vs. fast insertion.",
+  "tags": [
+    "Beginner",
+    "Karnataka",
+    "Engineering"
+  ],
+  "domain": "Data Structures & Algorithms (DSA)",
+  "readTime": "5 min read",
+  "difficulty": "Beginner"
+}
