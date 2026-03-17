@@ -36,16 +36,16 @@ export const BlogPost: React.FC = () => {
     <div className="min-h-screen bg-dark text-white">
       <ScrollToTop /> {/* 🟢 Add ScrollToTop component */}
       <Header />
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-4 py-6">
         <Link 
           to="/blogs"
-          className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors mb-8"
+          className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors mb-4"
         >
           <ArrowLeft className="h-4 w-4" />
           Back to Blogs
         </Link>
         <div className="max-w-4xl mx-auto">
-          <div className="mb-8">
+          <div className="mb-4">
             <div className="flex items-center gap-3 mb-4">
               {blog.metadata.domain && (
                 <span className="inline-block py-1 px-3 rounded-full bg-primary/20 text-primary text-sm font-bold uppercase tracking-wider border border-primary/30">
@@ -88,7 +88,7 @@ export const BlogPost: React.FC = () => {
               )}
             </div>
           </div>
-          <div className="flex flex-wrap gap-2 mb-8">
+          <div className="flex flex-wrap gap-2 mb-4">
             {blog.metadata.tags.map((tag) => (
               <span
                 key={tag}
@@ -98,7 +98,7 @@ export const BlogPost: React.FC = () => {
               </span>
             ))}
           </div>
-          <div className="h-px bg-white/10 mb-12"></div>
+          <div className="h-px bg-white/10 mb-6"></div>
           <article className="prose prose-invert max-w-none prose-headings:text-white prose-p:text-gray-200 prose-strong:text-white prose-code:text-primary">
             <ReactMarkdown remarkPlugins={[remarkGfm]}>
               {blog.content}
@@ -108,7 +108,7 @@ export const BlogPost: React.FC = () => {
 
           {/* Related Blogs Section */}
           {relatedBlogs.length > 0 && (
-            <div className="mt-16 pt-12 border-t border-white/10">
+            <div className="mt-8 pt-6 border-t border-white/10">
               <h2 className="text-3xl font-bold mb-8">Related Blogs</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {relatedBlogs.map(related => (

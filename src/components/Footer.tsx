@@ -5,7 +5,7 @@ import { FaXTwitter } from "react-icons/fa6";
 export function Footer() {
   return (
     <footer className="bg-dark/50 backdrop-blur-sm border-t border-white/10">
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center">
           <div className="flex items-center gap-2">
             <GraduationCap className="h-8 w-8 text-primary" />
@@ -19,7 +19,7 @@ export function Footer() {
             education. Learn at your own pace, completely free.
           </p>
 
-          <div className="mt-8 flex items-center gap-6">
+          <div className="mt-4 flex items-center gap-6">
             <a
               href="https://www.youtube.com/@EngineeringinKannada"
               target="_blank"
@@ -54,7 +54,7 @@ export function Footer() {
             </a>
           </div>
 
-          <div className="mt-8 text-center text-sm text-gray-400">
+          <div className="mt-4 text-center text-sm text-gray-400">
             <p>
               © {new Date().getFullYear()} Engineering in Kannada. All rights
               reserved.

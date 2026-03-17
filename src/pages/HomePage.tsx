@@ -21,7 +21,7 @@ export function HomePage() {
     <div className="min-h-screen bg-dark">
       <ScrollToTop /> {/* 🟢 Add the ScrollToTop component */}
       <Header />
-      <main className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+      <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <div className="text-center">
           <div className="flex justify-center">
             <img
@@ -45,7 +45,7 @@ export function HomePage() {
           <AnnouncementBanner />
         </div>
 
-        <div className="mt-16">
+        <div className="mt-8">
           <div className="flex items-center justify-between">
             <h2 className="text-2xl font-bold text-white">Available Courses</h2>
             <div className="flex items-center space-x-2">
