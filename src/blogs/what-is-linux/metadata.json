@@ -4,5 +4,13 @@
   "author": "Mahesh R M",
   "authorUrl": "https://www.linkedin.com/in/mahesh-r-madiwalar-9a468b345/",
   "description": "Discover the power of Linux, why it's the backbone of modern engineering, and how you can get started with basic commands. Explained in simple English and Kannada.",
-  "tags": ["Linux", "Engineering", "OpenSource", "Ubuntu"]
+  "tags": [
+    "Linux",
+    "Engineering",
+    "OpenSource",
+    "Ubuntu"
+  ],
+  "domain": "Operating Systems (OS)",
+  "readTime": "5 min read",
+  "difficulty": "Beginner"
 }

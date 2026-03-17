@@ -60,6 +60,9 @@ export interface BlogMetadata {
   authorUrl?: string;
   description: string;
   tags: string[];
+  domain: string;
+  readTime: string;
+  difficulty: "Beginner" | "Intermediate" | "Advanced";
 }
 
 export interface BlogPost {

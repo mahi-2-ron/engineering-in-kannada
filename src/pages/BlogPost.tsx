@@ -6,7 +6,7 @@ import remarkGfm from 'remark-gfm';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { ScrollToTop } from '../components/ScrollToTop'; // 🟢 Import ScrollToTop component
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, Clock } from 'lucide-react';
 import { LikeButton } from '../components/LikeButton';
 
 
@@ -44,6 +44,22 @@ export const BlogPost: React.FC = () => {
         </Link>
         <div className="max-w-4xl mx-auto">
           <div className="mb-8">
+            <div className="flex items-center gap-3 mb-4">
+              {blog.metadata.domain && (
+                <span className="inline-block py-1 px-3 rounded-full bg-primary/20 text-primary text-sm font-bold uppercase tracking-wider border border-primary/30">
+                  {blog.metadata.domain}
+                </span>
+              )}
+              {blog.metadata.difficulty && (
+                <span className={`inline-block py-1 px-3 rounded-full text-sm font-bold uppercase tracking-wider ${
+                  blog.metadata.difficulty === 'Beginner' ? 'bg-green-500/10 text-green-400 border border-green-500/20' :
+                  blog.metadata.difficulty === 'Intermediate' ? 'bg-yellow-500/10 text-yellow-400 border border-yellow-500/20' :
+                  'bg-red-500/10 text-red-400 border border-red-500/20'
+                }`}>
+                  {blog.metadata.difficulty}
+                </span>
+              )}
+            </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">{blog.metadata.title}</h1>
             <div className="flex items-center gap-6 text-gray-400 text-sm">
               <span>
@@ -62,6 +78,12 @@ export const BlogPost: React.FC = () => {
                 )}
               </span>
               <span>{new Date(blog.metadata.date).toLocaleDateString()}</span>
+              {blog.metadata.readTime && (
+                <div className="flex items-center gap-1.5 border-l border-gray-600 pl-6">
+                  <Clock className="h-4 w-4" />
+                  <span>{blog.metadata.readTime}</span>
+                </div>
+              )}
             </div>
           </div>
           <div className="flex flex-wrap gap-2 mb-8">

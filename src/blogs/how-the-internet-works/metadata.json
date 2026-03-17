@@ -4,5 +4,13 @@
   "author": "Mahesh R M",
   "authorUrl": "https://www.linkedin.com/in/mahesh-r-madiwalar-9a468b345/",
   "description": "Ever wondered what happens behind the scenes when you type a URL? Let's demystify the internet using simple analogies and engineering concepts.",
-  "tags": ["Networking", "DNS", "Web", "HTTP"]
+  "tags": [
+    "Networking",
+    "DNS",
+    "Web",
+    "HTTP"
+  ],
+  "domain": "Computer Networks (CN)",
+  "readTime": "5 min read",
+  "difficulty": "Beginner"
 }

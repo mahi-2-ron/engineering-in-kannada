@@ -4,5 +4,13 @@
   "author": "Mahesh R M",
   "authorUrl": "https://www.linkedin.com/in/mahesh-r-madiwalar-9a468b345/",
   "description": "Master the basics of version control with our beginner's guide to Git and GitHub. Perfect for engineering students starting their coding journey.",
-  "tags": ["Git", "GitHub", "OpenSource", "VersionControl"]
+  "tags": [
+    "Git",
+    "GitHub",
+    "OpenSource",
+    "VersionControl"
+  ],
+  "domain": "Open Source & Version Control",
+  "readTime": "5 min read",
+  "difficulty": "Beginner"
 }
