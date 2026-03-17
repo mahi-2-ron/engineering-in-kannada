@@ -50,4 +50,30 @@ export const getBlogPost = (slug: string): BlogPost | null => {
     content,
     slug,
   };
-}; 
+};
+
+export const getRelatedBlogs = (currentSlug: string, limit: number = 3): BlogPost[] => {
+  const currentPost = getBlogPost(currentSlug);
+  if (!currentPost) return [];
+
+  const allPosts = getBlogPosts().filter(post => post.slug !== currentSlug);
+
+  // Score posts: +2 for matching domain, +1 for each matching tag
+  const scoredPosts = allPosts.map(post => {
+    let score = 0;
+    if (post.metadata.domain === currentPost.metadata.domain) score += 2;
+    
+    if (post.metadata.tags && currentPost.metadata.tags) {
+      const commonTags = post.metadata.tags.filter(tag => currentPost.metadata.tags.includes(tag));
+      score += commonTags.length;
+    }
+    
+    return { post, score };
+  });
+
+  // Sort by score descending
+  scoredPosts.sort((a, b) => b.score - a.score);
+
+  // Return top N
+  return scoredPosts.slice(0, limit).map(sp => sp.post);
+};

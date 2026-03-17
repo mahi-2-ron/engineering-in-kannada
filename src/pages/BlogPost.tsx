@@ -1,18 +1,20 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { getBlogPost } from '../utils/blogUtils';
+import { getBlogPost, getRelatedBlogs } from '../utils/blogUtils';
+import { truncateWords } from '../utils/textUtils';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { ScrollToTop } from '../components/ScrollToTop'; // 🟢 Import ScrollToTop component
-import { ArrowLeft, Clock } from 'lucide-react';
+import { ArrowLeft, Clock, Calendar, User, Tag } from 'lucide-react';
 import { LikeButton } from '../components/LikeButton';
 
 
 export const BlogPost: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const blog = slug ? getBlogPost(slug) : null;
+  const relatedBlogs = slug ? getRelatedBlogs(slug, 3) : [];
 
   if (!blog) {
     return (
@@ -103,6 +105,56 @@ export const BlogPost: React.FC = () => {
             </ReactMarkdown>
           </article>
           {slug && <LikeButton slug={slug} />}
+
+          {/* Related Blogs Section */}
+          {relatedBlogs.length > 0 && (
+            <div className="mt-16 pt-12 border-t border-white/10">
+              <h2 className="text-3xl font-bold mb-8">Related Blogs</h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {relatedBlogs.map(related => (
+                  <Link
+                    key={related.slug}
+                    to={`/blogs/${related.slug}`}
+                    className="group cursor-pointer overflow-hidden rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 transition-all duration-300 hover:scale-[1.02] hover:bg-white/20 flex flex-col"
+                  >
+                    <div className="p-5 flex flex-col flex-grow">
+                      <div className="flex items-center justify-between mb-3">
+                        {related.metadata.domain && (
+                          <span className="inline-flex py-1 px-2 text-[10px] font-bold uppercase tracking-wider text-primary border border-primary/20 rounded-full bg-primary/10">
+                            {related.metadata.domain}
+                          </span>
+                        )}
+                      </div>
+                      <h3 className="text-lg font-bold text-white mb-2 leading-tight flex-grow">
+                        {truncateWords(related.metadata.title, 8)}
+                      </h3>
+                      <div className="flex items-center gap-4 text-gray-400 text-xs mb-3">
+                        <div className="flex items-center gap-1.5">
+                          <User className="h-3 w-3 text-primary" />
+                          <span>{related.metadata.author}</span>
+                        </div>
+                        <div className="flex items-center gap-1.5">
+                          <Calendar className="h-3 w-3 text-primary" />
+                          <span>{new Date(related.metadata.date).toLocaleDateString()}</span>
+                        </div>
+                      </div>
+                      <div className="flex flex-wrap gap-1.5 mt-auto pt-3 border-t border-white/10">
+                        {related.metadata.tags.slice(0, 2).map(tag => (
+                          <span key={tag} className="inline-flex items-center gap-1 text-[10px] font-medium text-primary">
+                            <Tag className="h-2.5 w-2.5" />
+                            {tag}
+                          </span>
+                        ))}
+                        {related.metadata.tags.length > 2 && (
+                          <span className="text-[10px] text-gray-400">+{related.metadata.tags.length - 2}</span>
+                        )}
+                      </div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
 
